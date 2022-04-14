@@ -5,31 +5,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Мой шаблон</title>
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="main__body">
-  <header>
-    <!-- Navbar -->
-    <nav>
-      <div class="container">
-        <div class="navbar">
-          <div class="logo"> <a href="#"> #freelance </a> </div>
-          <div class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item"><a href="#">Портфолио</a></li>
-              <li class="menu__list-item"><a href="#">Обо мне</a></li>
-              <li class="menu__list-item"><a href="#">Контакты</a></li>
-            </ul>
+  <div class="overlay">
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="logo"> <a href="#"> <img src="./img/Лого.svg" alt="logo"> </a> </div>
+            <div class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a href="#">About</a></li>
+                <li class="menu__list-item"><a href="#">Projects</a></li>
+                <li class="menu__list-item"><a href="#">Reviews</a></li>
+                <li class="menu__list-item"><a href="#">Contacts</a></li>
+
+              </ul>
+            </div>
+          <div class="burger">
+            <span></span>
           </div>
-        <div class="burger">
-          <span></span>
+        </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="header">
+          <div class="header__item">
+            <h1 class="title">Michael
+              Scofield</h1>
+            <h2 class="subtitle">Fullstack web developer</h2>
+            <div class="info">
+              <div class="info__item">UI / UX Design</div>
+              <div class="info__item">QA Testing</div>
+              <div class="info__item">Mobile Apps</div>
+              <div class="info__item">Web development</div>
+            </div>
+          </div>
+          <div class="header__item canvas__item"><img src="./img/header__img.svg" alt="circle"></div>
         </div>
       </div>
-      </div>
-    </nav>
-  </header>
+    </header>
+  </div>
 
 
   <!-- Библиотеки, скрипты из CDN... -->
