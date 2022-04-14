@@ -2,7 +2,7 @@
 @import "navbar";
 @import "vars"; 
 @import "header";
-
+@import "about";
 
      
 @media (max-width: 768px) {}
@@ -91,6 +91,30 @@ h1, h2, h3, h4, h5, h6, p {
     100% {
         opacity: 1;
     }
+}
+
+section {
+	padding: 75px 0;
+	@media (max-width: 768px) {
+		padding: 25px 0;
+	}
+}
+
+.section__subtitle {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 170%;
+	color: #FFFFFF;
+}
+
+.section__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 46px;
+	line-height: 55px;
+	color: #FFFFFF;
+	margin-top: 15px;
 }
 
 

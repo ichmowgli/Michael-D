@@ -1,0 +1,38 @@
+.section__about {
+    padding-top: 150px;
+    @media (max-width: 768px) {
+		padding: 25px;
+	}
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__item {
+            flex: 0 0 33%;
+            margin-top: 45px;
+            .about__num {
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 170%;
+                color: #FFFFFF;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 75px;
+                    height: 1px;
+                    background: white;
+                }
+            }
+            .about__text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 170%;
+                color: #FFFFFF;
+                margin-top: 20px;
+            }
+        }
+    }
+}
