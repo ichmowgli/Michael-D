@@ -1,0 +1,73 @@
+.section__reviews {
+    .reviews {
+        display: flex;
+        margin-top: 90px;
+        position: relative;
+        .arrows {
+            position: absolute;
+            bottom: 0;
+            right: 150px;
+            .arrow__btn {
+                background: #1378EF;
+                width: 70px;
+                height: 70px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                &-prev {
+                    &:hover {
+                       .prev__arrow {
+                        margin-left: 9px;
+                        transition: .3s all ease;
+                       } 
+                    }
+                    .prev__arrow {
+                        margin-left: 35px;
+                    }
+                }
+                &-next {
+                    margin-top: 10px;
+                    margin-left: 10px;
+                    &:hover {
+                        .next__arrow {
+                            margin-left: 9px;
+                            transition: .3s all ease;
+                       } 
+                        } 
+                     }
+                    .next__arrow {
+                        margin-left: -10px;
+                    }
+                }
+            }
+        }
+        .swiper-container {
+            max-width: 860px;
+            margin: 0;
+            .swiper-slide {
+                background: rgba(24, 24, 24, 0.59);
+                padding: 35px 25px;
+                .slide__img{ 
+                    display: flex;
+                    justify-content: center;
+                }
+                .slide__title {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 170%;
+                    color: #FFFFFF;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+                .slide__text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 170%;
+                    color: #FFFFFF;
+
+                }
+
+            }
+        }
+    }
+}

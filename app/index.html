@@ -8,6 +8,7 @@
   <title>Portfolio</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -439,6 +440,44 @@
           </div>
         </div>
       </section>
+
+      <section class="section__reviews">
+        <div class="container">
+          <h4 class="section__subtitle">Reviews</h4>
+          <h3 class="section__title">What my clients say about me:</h3>
+          <div class="reviews">
+            <div class="arrows">
+              <div class="arrow__btn arrow__btn-prev"><img class="prev__arrow" src="./img/left__arrow.svg" alt="arrow"></div>
+              <div class="arrow__btn arrow__btn-next"><img class="next__arrow" src="./img/right__arrow.svg" alt="arrow"></div>
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="slide__img"><img src="./img/slide1.png" alt="img"></div>
+                  <div class="slide__title">Jaxson Schleifer</div>
+                  <div class="slide__text">Thanks to Michael for doing everything efficiently on time and without broaches. I recommend this specialist for work. Special thanks to Michael for the work that was not included in the original.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide__img"><img src="./img/slide2.png" alt="img"></div>
+                  <div class="slide__title">Aspen Kenter</div>
+                  <div class="slide__text">Thank you very much for your work, the project was completed very quickly and efficiently. I recommend it as a reliable performer! I will contact you in the future.</div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="slide__img"><img src="./img/slide3.png" alt="img"></div>
+                  <div class="slide__title">Kadin Bator</div>
+                  <div class="slide__text">The performer who specifically understands the task. Very cool and easy to communicate. I did an excellent job, I will contact you. I advise everyone!</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 
@@ -456,15 +495,17 @@
     </div>
   </div>
 </div> 
-<a href="#" class="btn modal__btn">Открыть</a>
+
 
 
   <!-- Библиотеки, скрипты из CDN... -->
-  
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
   <!-- Cкрипты (удалить все, wкроме scripts.min.js перед билдом) -->
   <script src="./js/tabs.js"></script>
   <script src="./js/accordion.js"></script>
   <script src="./js/modals.js"></script>
+  <script src="./js/main.js"></script>
   <script src="./js/scripts.min.js"></script>
 </body>
 </html>
