@@ -13,6 +13,9 @@
 </head>
 
 <body class="main__body">
+  <div class="cursor"></div>
+  <div class="follower"></div>
+  
   <div class="overlay">
     <header>
       <!-- Navbar -->
@@ -22,10 +25,10 @@
             <div class="logo"> <a href="#"> <img src="./img/Лого.svg" alt="logo"> </a> </div>
             <div class="menu">
               <ul class="menu__list">
-                <li class="menu__list-item"><a href="#">About</a></li>
-                <li class="menu__list-item"><a href="#">Projects</a></li>
-                <li class="menu__list-item"><a href="#">Reviews</a></li>
-                <li class="menu__list-item"><a href="#">Contacts</a></li>
+                <li class="menu__list-item"><a href="#about">About</a></li>
+                <li class="menu__list-item"><a href="#projects">Projects</a></li>
+                <li class="menu__list-item"><a href="#reviews">Reviews</a></li>
+                <li class="menu__list-item"><a href="#contact">Contacts</a></li>
 
               </ul>
             </div>
@@ -55,7 +58,7 @@
     </header>
 
     <main>
-      <section class="section__about">
+      <section class="section__about" id="about">
         <div class="container">
           <h4 class="section__subtitle">About</h4>
           <h3 class="section__title">History of my development:</h3>
@@ -94,7 +97,7 @@
         </div>
       </section>
 
-      <section class="section__projects"> 
+      <section class="section__projects" id="projects"> 
         <div class="container">
           <h4 class="section__subtitle">Projects</h4>
           <h3 class="section__title">100+ projects on different topics:</h3>
@@ -432,7 +435,7 @@
         </div>
       </section>
 
-      <section class="section__contact">
+      <section class="section__contact" id="contact">
         <div class="container">
           <div class="contact">
             <div class="contact__title">Write to me and I will answer within the next 24 hours</div>
@@ -441,7 +444,7 @@
         </div>
       </section>
 
-      <section class="section__reviews">
+      <section class="section__reviews" id="reviews">
         <div class="container">
           <h4 class="section__subtitle">Reviews</h4>
           <h3 class="section__title">What my clients say about me:</h3>
@@ -481,6 +484,23 @@
     </main>
   </div>
 
+  <footer id="footer">
+    <div class="container">
+      <div class="footer">
+        <div class="footer__item">
+          <form class="form">
+            <div class="form__title">Calculate the timing and cost of your project</div>
+            <div class="form__subtitle">Leave your phone number for communication</div>
+            <input type="text" class="form__input" placeholder="Name">
+            <input type="tel" class="form__input phone__input" placeholder="Phone">
+            <textarea class="form__textarea" placeholder="Message"></textarea>
+            <button class="form__btn link">Discuss the project</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- Модальное окно -->
 <div class="modal__wrapper">
   <div class="modal">
@@ -500,9 +520,14 @@
 
   <!-- Библиотеки, скрипты из CDN... -->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js"></script>
 
   <!-- Cкрипты (удалить все, wкроме scripts.min.js перед билдом) -->
   <script src="./js/tabs.js"></script>
+  <script src="./js/phonemask.js"></script>
+  <script src="./js/smooth-scroll.min(lib).js"></script>
+
   <script src="./js/accordion.js"></script>
   <script src="./js/modals.js"></script>
   <script src="./js/main.js"></script>
