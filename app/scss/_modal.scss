@@ -6,38 +6,87 @@
     top: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: #1B1B1B;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     display: none;
         .modal {
-            background: white;
-            padding: 25px;
-            border-radius: 5px;
-            height: 350px;
-            width: 300px;
+           position: relative;
+           padding: 25px;
+           max-width: 350px;
+           width: 100%;
+           background: #1F1F1F;
                 &__title {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 100%;
                     text-align: center;
+                    color: #FFFFFF;
                 }
                 &__close{
+                    position: absolute;
+                    right: 15px;
+                    top: 15px;
                     cursor: pointer;
-                    display: flex;
-                    justify-content: flex-end;
+                }
+                &__body {
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        input {
+                            margin-top: 35px;
+                            background: none;
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid #FFFFFF;
+                            padding: 5px 0;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 170%;  
+                            color: #FFFFFF;
+                            &::placeholder {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 170%;  
+                                color: #FFFFFF;
+                            }
+                        }
+                        textarea {
+                            resize: none;
+                            margin-top: 35px;
+                            min-height: 75px;
+                            
+                            background: none;
+                            outline: none;
+                            border: none;
+                            border-bottom: 1px solid #FFFFFF;
+                            padding: 5px 0;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 170%;  
+                            color: #FFFFFF;
+                            &::placeholder {
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 170%;  
+                                color: #FFFFFF;
+
+                            }
+                        }
+                        button {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            color: #FFFFFF;
+                            border: none;
+                            outline: none;
+                            margin-top: 30px;
+                            background: none;
+
+                        }
+                    }
                 }
         }
 }
-
-// ************************ Кнопка вызова модального окна ************************ //
-.modal__btn  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 30px;
-    height: 50px;
-    width: 150px;
-    cursor: pointer;
-}
-
