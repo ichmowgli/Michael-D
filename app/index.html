@@ -15,7 +15,7 @@
 <body class="main__body">
   <div class="cursor"></div>
   <div class="follower"></div>
-  
+
   <div class="overlay">
     <header>
       <!-- Navbar -->
@@ -25,10 +25,10 @@
             <div class="logo"> <a href="#"> <img src="./img/Лого.svg" alt="logo"> </a> </div>
             <div class="menu">
               <ul class="menu__list">
-                <li class="menu__list-item"><a href="#about">About</a></li>
-                <li class="menu__list-item"><a href="#projects">Projects</a></li>
-                <li class="menu__list-item"><a href="#reviews">Reviews</a></li>
-                <li class="menu__list-item"><a href="#contact">Contacts</a></li>
+                <li class="menu__list-item link"><a href="#about">About</a></li>
+                <li class="menu__list-item link"><a href="#projects">Projects</a></li>
+                <li class="menu__list-item link"><a href="#reviews">Reviews</a></li>
+                <li class="menu__list-item link"><a href="#contact">Contacts</a></li>
 
               </ul>
             </div>
@@ -52,7 +52,11 @@
               <div class="info__item">Web development</div>
             </div>
           </div>
-          <div class="header__item canvas__item"><img src="./img/header__img.svg" alt="circle"></div>
+          <div class="header__item canvas__item">
+            <canvas id="canvasOne" width="550" height="550">
+              Your browser does not support HTML5 canvas.
+            </canvas>
+          </div>
         </div>
       </div>
     </header>
@@ -510,7 +514,7 @@
       <form>
         <input type="text" placeholder="Name">
         <textarea placeholder="Message"></textarea>
-        <button>Discuss the project</button>
+        <button class="link">Discuss the project</button>
       </form>
     </div>
   </div>
@@ -525,6 +529,7 @@
 
   <!-- Cкрипты (удалить все, wкроме scripts.min.js перед билдом) -->
   <script src="./js/tabs.js"></script>
+  <script src="./js/canvas.js"></script>
   <script src="./js/phonemask.js"></script>
   <script src="./js/smooth-scroll.min(lib).js"></script>
 
