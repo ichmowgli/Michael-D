@@ -31,8 +31,7 @@
                     &:hover {
                         .next__arrow {
                             margin-left: 9px;
-                            transition: .3s all ease;
-                       } 
+                            transition: .3s all ease; 
                         } 
                      }
                     .next__arrow {
@@ -47,7 +46,7 @@
             .swiper-slide {
                 background: rgba(24, 24, 24, 0.59);
                 padding: 35px 25px;
-                .slide__img{ 
+                .slide__img { 
                     display: flex;
                     justify-content: center;
                 }
