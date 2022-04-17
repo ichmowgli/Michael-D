@@ -68,7 +68,11 @@ gulp.task('js', function(){
     './app/js/phonemask.js',
     './app/js/accordion.js',
     './app/js/tabs.js',
-    './app/js/main.js'
+    './app/js/main.js',
+    './app/js/smooth-scroll.min(lib).js',
+    './app/js/canvas.js',
+    './app/js/modals.js',
+
   ])
     .pipe(babel({
       presets: ["@babel/preset-env"]
