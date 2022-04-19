@@ -168,7 +168,12 @@ section {
 	}
 }
 
-
+#limited {
+	all: unset;
+	&:focus-visible {
+		border: 1px solid #FFFFFF;
+	}
+}
 
 
 
